@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("music")
 public class MusicController {
     @Autowired
     Environment environment;
 
-    @RequestMapping("music")
+    @RequestMapping("genre")
     public String music() {
         return "Jazz from: " + environment.getProperty("local.server.port");
     }

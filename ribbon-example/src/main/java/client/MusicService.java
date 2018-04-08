@@ -10,6 +10,6 @@ public class MusicService {
     RestTemplate restTemplate;
 
     public String music() {
-        return restTemplate.getForObject("http://music/music",String.class);
+        return restTemplate.getForObject("http://music/music/genre",String.class);
     }
 }
