@@ -11,6 +11,7 @@
     <modules>
         <module>music</module>
         <module>gateway</module>
+        <module>feign-example</module>
     </modules>
 
     <parent>
