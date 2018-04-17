@@ -1,6 +1,18 @@
+---
+spring:
+  profiles: gateway1
 server:
   port: 8090
+zuul:
+  routes:
+    music: /music/**
 
+
+---
+spring:
+  profiles: gateway2
+server:
+  port: 8091
 zuul:
   routes:
     music: /music/**
